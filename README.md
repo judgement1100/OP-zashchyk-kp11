@@ -1,2 +1,0 @@
-# OP-zashchyk-kp11
- 
