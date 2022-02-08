@@ -1,0 +1,110 @@
+﻿<Window x:Class="Lab1.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid x:Name="Calculator" Background="#FFE0DEE7">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="Combobox1" Grid.Row="0" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox2" Grid.Row="0" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox3" Grid.Row="0" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox4" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox5" Grid.Row="1" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox6" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox7" Grid.Row="2" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox8" Grid.Row="2" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+        <ComboBox x:Name="Combobox9" Grid.Row="2" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="40">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF0F0F0"/>
+                    <GradientStop Color="#FF13BF1B" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <ComboBoxItem Content="X" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+            <ComboBoxItem Content="O" FontSize="20" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        </ComboBox>
+
+        <Button x:Name="ButtonToMainWindow" Grid.Column="4" Grid.Row="2" FontSize="24" FontFamily="Algerian" Content="To main &#xD;&#xA;window" Background="#FFE5DF13" Cursor="Hand" Click="ButtonToMainWindow_Click"/>
+        <Button x:Name="ExitButton" Grid.Column="4" Grid.Row="0" FontSize="24" FontFamily="Algerian" Content="Exit" Background="#FF13ACE5" Cursor="Hand" Click="Exit_Click"/>
+        <Button x:Name="RestartButton" Grid.Column="4" Grid.Row="1" FontSize="24" FontFamily="Algerian" Content="Restart" Background="#FF1DDDB0" Cursor="Hand" Click="RestartButton_Click"/>
+    </Grid>
+</Window>
