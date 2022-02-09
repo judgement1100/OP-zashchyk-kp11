@@ -26,3 +26,31 @@ C:\Users\Admin\_Proga_\Visual Studio\Repos\2 семестр\Lab1\Lab1\obj\Releas
 C:\Users\Admin\_Proga_\Visual Studio\Repos\2 семестр\Lab1\Lab1\obj\Release\netcoreapp3.1\Window3.baml
 C:\Users\Admin\_Proga_\Visual Studio\Repos\2 семестр\Lab1\Lab1\obj\Release\netcoreapp3.1\Window4.g.cs
 C:\Users\Admin\_Proga_\Visual Studio\Repos\2 семестр\Lab1\Lab1\obj\Release\netcoreapp3.1\Window4.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.exe
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.deps.json
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.runtimeconfig.json
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.runtimeconfig.dev.json
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.dll
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\bin\Release\netcoreapp3.1\Lab1.pdb
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.csproj.AssemblyReference.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\MainWindow.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window1.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window2.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window3.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window4.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\App.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1_MarkupCompile.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1_MarkupCompile.lref
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\MainWindow.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window1.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window2.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window3.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Window4.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.g.resources
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.AssemblyInfoInputs.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.AssemblyInfo.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.csproj.CoreCompileInputs.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.dll
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.pdb
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Lab1\Lab1\obj\Release\netcoreapp3.1\Lab1.genruntimeconfig.cache

@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1"
         mc:Ignorable="d"
-        Title="First app" Icon="/завантаження.jpg" ResizeMode="NoResize" SizeToContent="Manual" Grid.IsSharedSizeScope="True" WindowStartupLocation="CenterScreen" Width="994" Height="550">
-    <Grid x:Name="MainForm" RenderTransformOrigin="0.505,0.486" AutomationProperties.Name="Hello" Margin="-5,-1,0,0">
+        Title="First app" Icon="/завантаження.jpg" ResizeMode="NoResize" SizeToContent="Manual" Grid.IsSharedSizeScope="False" WindowStartupLocation="CenterScreen" Width="994" Height="550">
+    <Grid x:Name="MainForm" RenderTransformOrigin="0.505,0.486" AutomationProperties.Name="Hello" Margin="-5,-1,0,0" Height="536">
         <Grid.RowDefinitions>
             <RowDefinition Height="434"/>
         </Grid.RowDefinitions>
