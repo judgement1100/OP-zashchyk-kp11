@@ -1,0 +1,39 @@
+﻿<Window x:Class="Lab2.WindowCheck"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="WindowCheck" Height="450" Width="1000" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF3BD4B6">
+        <Button x:Name="ButtonExit" Content="Вийти з режиму" Margin="89,0,0,22" FontSize="22" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="217" Click="ButtonExit_Click" Height="61"/>
+        <Label Content="Режим перевірки" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" HorizontalAlignment="Center" Height="69" Margin="0,12,0,0" VerticalAlignment="Top" Width="416"/>
+        <Label Content="Кодове слово:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="57" Margin="35,78,0,0" VerticalAlignment="Top" Width="182"/>
+        <TextBlock x:Name="TheWord" HorizontalAlignment="Left" Height="34" Margin="229,91,0,0" Text="f,f,fufkfvfuf" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"/>
+        <Label Content="К-сть спроб:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="47" Margin="29,142,0,0" VerticalAlignment="Top" Width="172"/>
+        <ComboBox x:Name="Combobox1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="33" Margin="197,151,0,0" VerticalAlignment="Top" Width="58" FontSize="18" SelectedIndex="2" DropDownClosed="Combobox1_DropDownClosed_1">
+            <ComboBoxItem Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        </ComboBox>
+        <Label Content="Alpha:&#x9;0.05" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="48" Margin="287,138,0,0" VerticalAlignment="Top" Width="155"/>
+        <Label Content="Кількість введених символів" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="47" Margin="45,210,0,0" VerticalAlignment="Top" Width="301"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Height="34" Margin="361,218,0,0" Text="0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="46"/>
+        <TextBox x:Name="InputTextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="61" Margin="88,0,0,94" Text="..." TextWrapping="Wrap" VerticalAlignment="Bottom" Width="219" MouseDoubleClick="InputTextBox_MouseDoubleClick" KeyDown="InputTextBox_KeyDown" KeyUp="InputTextBox_KeyUp"/>
+        <Label Content="Статистичний аналіз" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" HorizontalAlignment="Right" Height="57" Margin="0,78,123,0" VerticalAlignment="Top" Width="237"/>
+        <Label Content="Дисперсії вибірок" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Right" Height="57" Margin="0,137,226,0" VerticalAlignment="Top" Width="237"/>
+        <TextBlock x:Name="TextBlock2" HorizontalAlignment="Left" Height="34" Margin="788,147,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"><Run Language="uk-ua" Text="..."/></TextBlock>
+        <Label Content="P ідентифікації: " HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="537,209,226,168"/>
+        <TextBlock x:Name="TextBlock3" HorizontalAlignment="Left" Height="34" Margin="788,216,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"><Run Language="uk-ua" Text="..."/></TextBlock>
+        <Label Content="Помилка 1-го роду" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="537,281,226,96"/>
+        <TextBlock x:Name="TextBlock4" HorizontalAlignment="Left" Height="34" Margin="788,296,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"><Run Language="uk-ua" Text="..."/></TextBlock>
+        <Label Content="Помилка 2-го роду" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Margin="537,351,226,26"/>
+        <TextBlock x:Name="TextBlock5" HorizontalAlignment="Left" Height="34" Margin="788,364,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"><Run Language="uk-ua" Text="..."/></TextBlock>
+        <TextBlock x:Name="TextBlock6" HorizontalAlignment="Left" Height="34" Margin="402,353,0,0" Text="0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="46"/>
+        <Label Content="К-сть спроб:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="47" Margin="330,291,0,0" VerticalAlignment="Top" Width="172"/>
+
+    </Grid>
+</Window>

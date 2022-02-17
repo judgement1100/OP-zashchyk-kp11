@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lab2.WindowTeach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="WindowTeach" Height="550" Width="550" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFFCB6FA">
+        <Label Content="Режим навчання" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="40" HorizontalAlignment="Center" Height="69" Margin="0,38,0,0" VerticalAlignment="Top" Width="415"/>
+        <Button x:Name="ButtonExit" Content="До головного вікна" Margin="0,429,0,0" FontSize="18" Cursor="Hand" Click="ButtonExit_Click" HorizontalAlignment="Center" Width="176" Height="63" VerticalAlignment="Top"/>
+        <Label Content="Кодове слово:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="51" Margin="47,150,0,0" VerticalAlignment="Top" Width="179"/>
+        <TextBlock x:Name="TheWord" HorizontalAlignment="Left" Height="34" Margin="243,160,0,0" Text="f,f,fufkfvfuf" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="179"/>
+        <Label Content="Поле для введення:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="51" Margin="47,230,0,0" VerticalAlignment="Top" Width="215"/>
+        <TextBox x:Name="InputTextBox" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="61" Margin="301,226,0,0" Text="..." TextWrapping="Wrap" VerticalAlignment="Top" Width="219" MouseDoubleClick="InputTextBox_MouseDoubleClick" KeyDown="InputTextBox_KeyDown" KeyUp="InputTextBox_KeyUp"/>
+        <Label Content="Кількість спроб:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="51" Margin="11,323,0,0" VerticalAlignment="Top" Width="215"/>
+        <ComboBox x:Name="Combobox1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="33" Margin="213,332,0,0" VerticalAlignment="Top" Width="58" FontSize="18" SelectedIndex="1" DropDownClosed="Combobox1_DropDownClosed">
+            <ComboBoxItem Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+            <ComboBoxItem Content="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18"/>
+        </ComboBox>
+        <Label Content="Залишилося спроб:" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="22" HorizontalAlignment="Left" Height="51" Margin="296,321,0,0" VerticalAlignment="Top" Width="221"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Height="34" Margin="391,374,0,0" TextWrapping="Wrap" FontSize="22" VerticalAlignment="Top" Width="31"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,16 @@
+﻿<Window x:Name="MainWindow1" x:Class="Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFEA8E8E">
+        <Label Content="Система автентифікації користувача за клавіатурним почерком" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" HorizontalAlignment="Center" Height="84" Margin="0,65,0,0" VerticalAlignment="Top" Width="610" FontFamily="Bahnschrift SemiBold"/>
+        <Button x:Name="ButtonTeach" Content="Режим навчання" Margin="73,0,0,70" FontSize="18" Cursor="Hand" HorizontalAlignment="Left" Width="160" Height="63" VerticalAlignment="Bottom" Click="ButtonTeach_Click"/>
+        <Button x:Name="ButtonCheck" Content="Режим перевірки" Margin="0,0,73,70" FontSize="18" Cursor="Hand" VerticalAlignment="Bottom" Height="63" HorizontalAlignment="Right" Width="160" Click="ButtonCheck_Click"/>
+        <Button x:Name="ButtonExit" Content="Вихід" Margin="0,301,0,0" FontSize="18" Cursor="Hand" Click="ButtonExit_Click" HorizontalAlignment="Center" Width="160" Height="63" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
