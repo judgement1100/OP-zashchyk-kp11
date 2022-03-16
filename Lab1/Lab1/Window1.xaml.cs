@@ -35,7 +35,7 @@ namespace Lab1
             StreamWriter streamWriterToClear = new StreamWriter("info.txt", false);
             streamWriterToClear.Write("");
             streamWriterToClear.Close();
-            showFileContent();
+            ShowFileContent();
         }
         private void ButtonToRead_Click(object sender, RoutedEventArgs e)
         {
@@ -44,9 +44,9 @@ namespace Lab1
             writer.WriteLine(text);
             writer.Close();
             TextBox1.Text = "";
-            showFileContent();
+            ShowFileContent();
         }
-        private void showFileContent()
+        private void ShowFileContent()
         {
             StreamReader reader = new StreamReader("info.txt");
             string fileText = reader.ReadToEnd();
@@ -73,7 +73,7 @@ namespace Lab1
             StreamWriter write = new StreamWriter("info.txt");
             write.Write(resText);
             write.Close();
-            showFileContent();
+            ShowFileContent();
             TextBox3.Text = "";
         }
 

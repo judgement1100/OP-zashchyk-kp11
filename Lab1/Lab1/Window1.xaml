@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lab1"
-        mc:Ignorable="d"
+        mc:Ignorable="d" 
         Title="Window1" Height="450" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/завантаження.png">
     <Grid>
         <Grid.Background>
@@ -15,11 +15,11 @@
         </Grid.Background>
         <Button x:Name="ButtonToMain1" Content="To main&#xD;&#xA;window" Margin="649,339,24,26" FontSize="18" FontFamily="Algerian" Background="#FF1FE513" Click="ButtonToMain1_Click" Cursor="Hand"/>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="83" Margin="27,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="588" FontSize="14" FontFamily="Arial" FontStyle="Italic" Background="#FFFCA0A0"/>
-        <Label Content="Введіть через кому номер залікової книжки, ПІП та опис студента" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="27,35,0,0" VerticalAlignment="Top" Height="46" Width="589" Background="#FF22D960" FontSize="16" FontStyle="Normal" FontFamily="Bodoni MT Black"/>
+        <Label Content="Введіть через кому номер залікової книжки, ПІП та опис студента" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="26,35,0,0" VerticalAlignment="Top" Height="46" Width="589" Background="#FF22D960" FontSize="16" FontStyle="Normal" FontFamily="Bodoni MT Black"/>
         <Label Content="Вміст файлу нижче" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="26,218,0,0" VerticalAlignment="Top" Height="46" Width="589" Background="#FF22D960" FontSize="16" FontStyle="Normal" FontFamily="Bodoni MT Black"/>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="83" Margin="27,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="588" FontSize="14" FontFamily="Arial" FontStyle="Italic" Background="#FFFCA0A0"/>
         <Button x:Name="ButtonToClear" Content="Clear" Height="53" Margin="0,106,31,0" VerticalAlignment="Top" FontStyle="Normal" FontWeight="Normal" FontSize="16" Background="#FFF706F9" FontFamily="Algerian" Click="ButtonToClear_Click" HorizontalAlignment="Right" Width="103" Cursor="Hand"/>
-        <Button x:Name="ButtonToRead" Content="Read" Height="53" Margin="0,33,31,0" VerticalAlignment="Top" FontStyle="Normal" FontWeight="Normal" FontSize="16" Background="#FFF706F9" FontFamily="Algerian" Click="ButtonToRead_Click" HorizontalAlignment="Right" Width="103" Cursor="Hand"/>
+        <Button x:Name="ButtonToRead" Content="Read" Height="54" Margin="0,33,31,0" VerticalAlignment="Top" FontStyle="Normal" FontWeight="Normal" FontSize="16" Background="#FFF706F9" FontFamily="Algerian" Click="ButtonToRead_Click" HorizontalAlignment="Right" Width="103" Cursor="Hand"/>
         <Button x:Name="ButtonToDeleteSudent" Content="Delete student" Height="53" Margin="0,182,12,0" VerticalAlignment="Top" FontStyle="Normal" FontWeight="Normal" Background="#FFF706F9" FontFamily="Algerian" Click="ButtonToDeleteSudent_Click" HorizontalAlignment="Right" Width="143" Cursor="Hand" FontSize="16"/>
         <TextBox x:Name="TextBox3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="0,253,14,0" TextWrapping="Wrap" FontSize="14" FontFamily="Arial" FontStyle="Italic" Background="#FFFCA0A0" Text="Введіть номер залікової книжки студента" MouseDoubleClick="TextBox3_MouseDoubleClick" HorizontalAlignment="Right" Width="141" Height="60" VerticalAlignment="Top"/>
 

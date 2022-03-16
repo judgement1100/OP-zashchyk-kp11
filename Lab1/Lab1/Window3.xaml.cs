@@ -32,35 +32,45 @@ namespace Lab1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string str = (string)((Button)e.OriginalSource).Content;
-            if (str == "Exit")
+            try
             {
-                MyTextBox.Text = "";
-                MainWindow mainWindow = new MainWindow();
-                Hide();
-                mainWindow.Show();
+                string str = (string)((Button)e.OriginalSource).Content;
+                if (str == "Exit")
+                {
+                    MyTextBox.Text = "";
+                    MainWindow mainWindow = new MainWindow();
+                    Hide();
+                    mainWindow.Show();
+                }
+                else if (str == "C")
+                {
+                    MyTextBox.Text = "";
+                }
+                else if (str == "=")
+                {
+                    DataTable dataTable = new DataTable();
+                    string result = dataTable.Compute(MyTextBox.Text, null).ToString();
+                    MyTextBox.Text = result;
+                }
+                else if (str == "+/-")
+                {
+                    MyTextBox.Text += "*-1";
+                }
+                else if (str == "b")
+                {
+                    if (MyTextBox.Text != "")
+                    {
+                        MyTextBox.Text = MyTextBox.Text.Remove(MyTextBox.Text.Length - 1, 1);
+                    }
+                }
+                else
+                {
+                    MyTextBox.Text += str;
+                }
             }
-            else if (str == "C")
+            catch (Exception)
             {
-                MyTextBox.Text = "";
-            }
-            else if (str == "=")
-            {
-                DataTable dataTable = new DataTable();
-                string result = dataTable.Compute(MyTextBox.Text, null).ToString();
-                MyTextBox.Text = result;
-            }
-            else if (str == "+/-")
-            {
-                MyTextBox.Text += "*-1";
-            }
-            else if (str == "b")
-            {
-                MyTextBox.Text = MyTextBox.Text.Remove(MyTextBox.Text.Length - 1, 1);
-            } 
-            else
-            {
-                MyTextBox.Text += str;
+                MyTextBox.Text = "Error. Try again!";
             }
         }
     }
