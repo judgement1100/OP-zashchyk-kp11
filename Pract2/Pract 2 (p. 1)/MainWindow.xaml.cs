@@ -140,6 +140,8 @@ namespace Lab_2_First_App
             }
             else
             {
+                ListBoxItem item = (ListBoxItem)VelCB.SelectedItem;
+                dT.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt16(item.Content));
                 NumElemCB.IsEnabled = false;
                 dT.Start();
             }
@@ -201,8 +203,10 @@ namespace Lab_2_First_App
 
         private void VelCB_DropDownClosed(object sender, EventArgs e)
         {
+            dT.Stop();
             ListBoxItem item = (ListBoxItem)VelCB.SelectedItem;
             dT.Interval = new TimeSpan(0, 0, 0, 0, Convert.ToInt16(item.Content));
+            dT.Start();
         }
     }
 }

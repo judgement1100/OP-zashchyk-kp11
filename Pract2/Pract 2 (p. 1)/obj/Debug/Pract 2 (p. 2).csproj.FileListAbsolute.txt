@@ -1,0 +1,15 @@
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\bin\Debug\Pract 2 (p. 1).exe.config
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\bin\Debug\Pract 2 (p. 1).exe
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\bin\Debug\Pract 2 (p. 1).pdb
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 2).csproj.AssemblyReference.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\MainWindow.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\App.g.cs
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 1)_MarkupCompile.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 1)_MarkupCompile.lref
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\MainWindow.baml
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 1).g.resources
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract_2__p._1_.Properties.Resources.resources
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 2).csproj.GenerateResource.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 2).csproj.CoreCompileInputs.cache
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 1).exe
+D:\__MyGitHub__\OP\OP-zashchyk-kp11\Pract2\Pract 2 (p. 1)\obj\Debug\Pract 2 (p. 1).pdb

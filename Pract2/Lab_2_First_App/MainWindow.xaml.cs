@@ -24,8 +24,6 @@ namespace Lab_2_First_App
         static int PointCount = 10;
         static PointCollection collection_points = new PointCollection();
         static List<Ellipse> list_ellipses = new List<Ellipse>();
-        static int[] oddPointsIndex = new int[PointCount];
-
         static int maxIeration = 100;
         static int curIteration = 0;
         static int iterationStep = 10;
@@ -48,19 +46,6 @@ namespace Lab_2_First_App
             dT = new DispatcherTimer();
             dT.Tick += new EventHandler(OneStep);
             dT.Interval = new TimeSpan(0, 0, 0, 0, 100);
-        }
-
-        private void OneStep()
-        {
-            MyCanvas.Children.Clear();
-            CrossPopulations();
-            curIteration++;
-            PlotPoints();
-            PlotWay(GetBestWay());
-            if (curIteration == maxIeration)
-            {
-                dT.Stop();
-            }
         }
 
         private void OneStep(object sender, EventArgs e)
@@ -375,7 +360,6 @@ namespace Lab_2_First_App
                 {
                     PointCount = 500;
                 }
-                oddPointsIndex = new int[PointCount];
                 InitPoints();
                 InitPolygon();
                 PlotPoints();
