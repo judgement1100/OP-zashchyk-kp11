@@ -1,0 +1,56 @@
+﻿<Window x:Name="MainWin" x:Class="Lab_2_First_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_2_First_App"
+        mc:Ignorable="d"
+        Title="Пошук найкоротшого шляху. Прізвище, група, рік навчання." Height="450" Width="800" ResizeMode="NoResize" FontFamily="Georgia" FontSize="16">
+    <Grid x:Name="MyGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas Grid.Column="0" x:Name="MyCanvas" Margin="10,10,10,10"/>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Name="Label1" Content="Поточна ітерація:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="1" Name="Label2" Content="Кількість міст:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="2" Name="Label3" Content="Розмірність&#xD;&#xA;  популяції:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="3" Name="Label4" Content="Ймовірність мутації:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="4" Name="Label5" Content="Кількість ітерацій:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="5" Name="Label6" Content="Крок ітерації:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="6" Name="Label7" Content="Довжина шляху:" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1.5*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <TextBox Grid.Row="0" Name="TextBox1" Text="0" Margin="5, 5, 5, 5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" IsEnabled="False"/>
+            <TextBox Grid.Row="1" Name="TextBox2" Text="10" Margin="5, 5, 5, 5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox2_KeyUp"/>
+            <TextBox Grid.Row="2" Name="TextBox3" Text="5" Margin="5, 15, 5, 15" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox3_KeyUp"/>
+            <TextBox Grid.Row="3" Name="TextBox4" Text="0.7" Margin="5, 5, 5, 5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox4_KeyUp"/>
+            <TextBox Grid.Row="4" Name="TextBox5" Text="100" Margin="5, 5, 5, 5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox5_KeyUp"/>
+            <TextBox Grid.Row="5" Name="TextBox6" Text="10" Margin="5, 5, 5, 5" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox6_KeyUp"/>
+            <TextBox Grid.Row="6" Name="TextBox7" Text="0" Margin="5, 5, 5, 5" FontSize="15" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyUp="TextBox6_KeyUp" IsEnabled="False"/>
+        </Grid>
+        <Button Content="Start / pause" FontSize="30" HorizontalAlignment="Left" Height="65" VerticalAlignment="Top" Width="233" Grid.ColumnSpan="2" Margin="53.4,336,0,0" Grid.Column="1" Background="#FFF48888" FontFamily="Broadway" Cursor="Hand" Click="StopStart_Click"/>
+    </Grid>
+</Window>
