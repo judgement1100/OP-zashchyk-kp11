@@ -417,7 +417,6 @@ namespace Lab2
         }
         public void ExitButton(object sender, RoutedEventArgs e)
         {
-            //myGrid.Children.Clear();
             win1.Hide();
             mainWindow.Show();
         }

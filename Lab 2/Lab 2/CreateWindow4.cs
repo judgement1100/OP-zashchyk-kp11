@@ -33,7 +33,7 @@ namespace Lab2
             Label myLabel = new Label();
             myLabel.HorizontalContentAlignment = HorizontalAlignment.Center;
             myLabel.VerticalContentAlignment = VerticalAlignment.Center;
-            myLabel.Content = "Розробник:\nЗащик Іван Олександрович\nКП-11\nДата створення - 08.02.2022";
+            myLabel.Content = "Розробник:\nЗащик Іван Олександрович\nКП-11\nДата створення - 16.03.2022";
             myLabel.FontStyle = FontStyles.Italic;
             myLabel.FontSize = 24;
             commonMethods.SetMargin(myLabel, 0, 0, 0, 50);
