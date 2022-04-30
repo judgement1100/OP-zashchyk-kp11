@@ -32,6 +32,7 @@ namespace Lab_2_First_App
         static double[] distancesArray = new double[2 * NPopulation];
         static double mutationChance = 0.7;
         static bool needRestart = false;
+        static Random rnd = new Random();
 
         public MainWindow()
         {
@@ -87,7 +88,6 @@ namespace Lab_2_First_App
 
         private void CrossPopulations()
         {
-            Random rnd = new Random();
             for (int i = 0; i < NPopulation; i++)
             {
                 int population1Index = rnd.Next(NPopulation);
@@ -133,30 +133,28 @@ namespace Lab_2_First_App
 
         private void MutateElem(ref int[] elem)
         {
-            Random rnd = new Random();
-            int i11 = rnd.Next(PointCount);
-            int i22 = rnd.Next(PointCount);
-            if (i11 < i22)
+            int i1 = rnd.Next(PointCount);
+            int i2 = rnd.Next(PointCount);
+            if (i1 < i2)
             {
-                for (int j = 0; j <= (i22 - i11) / 2; j++)
+                for (int i = 0; i <= (i2 - i1) / 2; i++)
                 {
-                    int k = elem[i11 + j];
-                    elem[i11 + j] = elem[i22 - j];
-                    elem[i22 - j] = k;
+                    int tmp = elem[i1 + i];
+                    elem[i1 + i] = elem[i2 - i];
+                    elem[i2 - i] = tmp;
                 }
             }
             else
-                for (int j = 0; j <= (i11 - i22) / 2; j++)
+                for (int i = 0; i <= (i1 - i2) / 2; i++)
                 {
-                    int k = elem[i22 + j];
-                    elem[i22 + j] = elem[i11 - j];
-                    elem[i11 - j] = k;
+                    int tmp = elem[i2 + i];
+                    elem[i2 + i] = elem[i1 - i];
+                    elem[i1 - i] = tmp;
                 }
         }
 
         private int[] GetChild(int crossPoint, int[] population1, int[] population2)
         {
-            Random rnd = new Random();
             int[] part1Pop1 = new int[crossPoint];
             int[] part2Pop1 = new int[PointCount - crossPoint];
             Array.Copy(population1, part1Pop1, crossPoint);
@@ -249,7 +247,6 @@ namespace Lab_2_First_App
         private void InitWaysArr()
         {
             List<int> oddValues = new List<int>();
-            Random rnd = new Random();
             for (int i = 0; i < NPopulation; i++)
             {
                 waysArray[i] = new int[PointCount];
@@ -279,7 +276,6 @@ namespace Lab_2_First_App
 
         private void InitPoints()
         {
-            Random rnd = new Random();
             collection_points.Clear();
             list_ellipses.Clear();
 
@@ -333,6 +329,10 @@ namespace Lab_2_First_App
             }
             else
             {
+                if (waysArray.Contains(null))
+                {
+                    InitWaysArr();
+                }
                 if (needRestart)
                 {
                     curIteration = 0;
@@ -355,15 +355,22 @@ namespace Lab_2_First_App
         {
             if (e.Key == Key.Enter)
             {
-                PointCount = Convert.ToInt32(TextBox2.Text);
-                if (PointCount > 500)
+                try
                 {
-                    PointCount = 500;
+                    PointCount = Convert.ToInt32(TextBox2.Text);
+                    if (PointCount > 500)
+                    {
+                        PointCount = 500;
+                    }
+                    InitPoints();
+                    InitPolygon();
+                    PlotPoints();
+                    InitWaysArr();
                 }
-                InitPoints();
-                InitPolygon();
-                PlotPoints();
-                InitWaysArr();
+                catch
+                {
+
+                }
             }
         }
 
@@ -371,10 +378,17 @@ namespace Lab_2_First_App
         {
             if (e.Key == Key.Enter)
             {
-                maxIeration = int.Parse(TextBox5.Text);
-                if (maxIeration > 1000)
+                try
                 {
-                    maxIeration = 1000;
+                    maxIeration = int.Parse(TextBox5.Text);
+                    if (maxIeration > 10000)
+                    {
+                        maxIeration = 10000;
+                    }
+                }
+                catch
+                {
+
                 }
             }
         }
@@ -383,10 +397,17 @@ namespace Lab_2_First_App
         {
             if (e.Key == Key.Enter)
             {
-                iterationStep = int.Parse(TextBox6.Text);
-                if (iterationStep > 1000)
+                try
                 {
-                    iterationStep = 1000;
+                    iterationStep = int.Parse(TextBox6.Text);
+                    if (iterationStep > 1000)
+                    {
+                        iterationStep = 1000;
+                    }
+                }
+                catch
+                {
+
                 }
             }
         }
@@ -395,10 +416,17 @@ namespace Lab_2_First_App
         {
             if (e.Key == Key.Enter)
             {
-                mutationChance = double.Parse(TextBox4.Text);
-                if (mutationChance > 1)
+                try
                 {
-                    mutationChance = 1;
+                    mutationChance = double.Parse(TextBox4.Text);
+                    if (mutationChance > 1)
+                    {
+                        mutationChance = 1;
+                    }
+                }
+                catch
+                {
+
                 }
             }
         }
@@ -407,13 +435,20 @@ namespace Lab_2_First_App
         {
             if (e.Key == Key.Enter)
             {
-                NPopulation = int.Parse(TextBox3.Text);
-                if (NPopulation > 100)
+                try
                 {
-                    NPopulation = 100;
+                    NPopulation = int.Parse(TextBox3.Text);
+                    if (NPopulation > 100)
+                    {
+                        NPopulation = 100;
+                    }
+                    waysArray = new int[2 * NPopulation][];
+                    distancesArray = new double[2 * NPopulation];
                 }
-                waysArray = new int[2 * NPopulation][];
-                distancesArray = new double[2 * NPopulation];
+                catch
+                {
+
+                }
             }
         }
     }

@@ -21,6 +21,7 @@ namespace Lab_2_First_App
         static List<Ellipse> list_ellipses = new List<Ellipse>();
         static int[] oddPointsIndex = new int[PointCount];
         static int counter = 0;
+        static Random rnd = new Random();
 
         public MainWindow()
         {
@@ -96,7 +97,6 @@ namespace Lab_2_First_App
 
         private void InitPoints()
         {
-            Random rnd = new Random();
             collection_points.Clear();
             list_ellipses.Clear();
 
