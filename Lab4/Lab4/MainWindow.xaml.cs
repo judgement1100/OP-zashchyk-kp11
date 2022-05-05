@@ -57,7 +57,7 @@ namespace Lab4
                 }
                 else if (selectedText == "DepartmentToDoctor")
                 {
-                    GetVisitsData();
+                    GetDepartmentToDoctorData();
                 }
             }
         }
@@ -138,7 +138,15 @@ namespace Lab4
 
         void GetDepartmentToDoctorData()
         {
-
+            string query = "select dbo.Departments.department_name as [Назва відділення],dbo.Doctors.surname as [Прізвище] from dbo.DepatrmentToDoctor inner join dbo.Doctors on dbo.Doctors.id = dbo.DepatrmentToDoctor.doctor_id inner join dbo.Departments on dbo.Departments.id = dbo.DepatrmentToDoctor.department_id";
+            try
+            {
+                GetAndShowData(query);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
