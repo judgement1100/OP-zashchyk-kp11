@@ -1,0 +1,25 @@
+﻿<Window x:Class="Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Activated="Window_Activated">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid Name="DataGrid1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="800" Height="365" Grid.ColumnSpan="2" Margin="-3,0,-3.4,0"/>
+        <Button x:Name="Button1" Content="Editing window" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="77,5,0,0" Height="35" Width="170" Click="Button1_Click" Cursor="Hand" Background="#FF96F46B"/>
+        <Button x:Name="Button2" Content="Exit" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="20" Margin="0,5,0,0" Height="35" Width="100" Click="Button2_Click" Background="#FFFF9494" Cursor="Hand"/>
+        <ComboBox x:Name="Combobox1" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" SelectedIndex="0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="20" Margin="0,5,97.6,0" Height="35" Width="150" DropDownClosed="Combobox1_DropDownClosed">
+            <ComboBoxItem Content="Cards"/>
+            <ComboBoxItem Content="Departments"/>
+            <ComboBoxItem Content="Doctors"/>
+            <ComboBoxItem Content="Visits"/>
+            <ComboBoxItem Content="DepartmentToDoctor"/>
+        </ComboBox>
+    </Grid>
+</Window>

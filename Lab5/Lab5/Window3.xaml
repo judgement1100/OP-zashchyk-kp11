@@ -1,0 +1,62 @@
+﻿<Window x:Class="Lab5.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="Window3" Height="700" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid ShowGridLines="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1.36*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="1.3*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Row="0" Name="Button3" Content="Delete" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="60" Margin="32,16,0,0" Click="Button3_Click"/>
+            <Button Grid.Row="0" Name="Button2" Content="Insert" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Height="60" Margin="224,16,0,0" Click="Button2_Click" Grid.ColumnSpan="2"/>
+            <Button Grid.Row="0" Name="Button1" Grid.Column="1" Content="Update" HorizontalAlignment="Right" VerticalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Width="150" Height="60" Margin="0,16,32,12" FontSize="20" Click="Button1_Click"/>
+
+            <Label Name="Label1" Content="№" Grid.Row="1" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox1" Text="" Grid.Row="1" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" KeyUp="TextBox1_KeyUp" MouseDoubleClick="TextBox_MouseDoubleClick"/>
+
+            <Label Name="Label2" Content="Ім'я" Grid.Row="2" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox2" Text="" Grid.Row="2" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox2_KeyUp"/>
+
+            <Label Name="Label3" Content="Прізвище" Grid.Row="3" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox3" Text="" Grid.Row="3" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox3_KeyUp"/>
+
+            <Label Name="Label4" Content="По батькові" Grid.Row="4" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox4" Text="" Grid.Row="4" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox4_KeyUp"/>
+
+            <Label Name="Label5" Content="Дні прийому" Grid.Row="5" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox5" Text="" Grid.Row="5" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox5_KeyUp"/>
+
+            <Label Name="Label6" Content="Початок роботи" Grid.Row="6" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox6" Text="" Grid.Row="6" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox6_KeyUp"/>
+
+            <Label Name="Label7" Content="Закінчення роботи" Grid.Row="7" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox7" Text="" Grid.Row="7" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox7_KeyUp"/>
+
+            <Label Name="Label8" Content="Кабінет" Grid.Row="8" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Name="TextBox8" Text="" Grid.Row="8" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox8_KeyUp"/>
+        </Grid>
+        <DataGrid Name="DataGrid_Win1" Grid.Column="1" Margin="0.2,0,-0.4,120.4"/>
+        <Button Grid.Row="0" x:Name="Button4" Content="To main" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Height="65" Margin="234.2,576,0,0" Background="#FFF63838" Cursor="Hand" FontFamily="Algerian" Click="Button4_Click" Grid.Column="1"/>
+    </Grid>
+</Window>
