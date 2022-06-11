@@ -56,7 +56,7 @@
             <Label Name="Label8" Content="Кабінет" Grid.Row="8" Grid.Column="0" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Name="TextBox8" Text="" Grid.Row="8" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" VerticalAlignment="Center" Width="250" Height="45" MouseDoubleClick="TextBox_MouseDoubleClick" KeyUp="TextBox8_KeyUp"/>
         </Grid>
-        <DataGrid Name="DataGrid_Win1" Grid.Column="1" Margin="0.2,0,-0.4,120.4"/>
+        <DataGrid Name="DataGrid_Win1" Grid.Column="1" Margin="0.2,0,-0.4,120.4" CellEditEnding="DataGrid_Win1_CellEditEnding"/>
         <Button Grid.Row="0" x:Name="Button4" Content="To main" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="142" Height="65" Margin="234.2,576,0,0" Background="#FFF63838" Cursor="Hand" FontFamily="Algerian" Click="Button4_Click" Grid.Column="1"/>
     </Grid>
 </Window>

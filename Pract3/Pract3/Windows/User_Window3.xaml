@@ -1,0 +1,98 @@
+﻿<Window x:Class="Pract3.Windows.User_Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract3.Windows"
+        mc:Ignorable="d"
+        Title="User_Window3" Height="800" Width="1200" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Авторизація користувача" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Логін" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+
+            <TextBox Name="loginField" Grid.Row="1" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox Name="passwordField" Grid.Row="2" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+
+            <Button Grid.Row="3" Grid.ColumnSpan="2" FontSize="28" Margin="150,15,150,15" Content="Авторизуватись" Cursor="Hand" FontFamily="Comic Sans MS" Click="Button_Authorise_Click"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Зміна даних користувача" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Ім'я" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Прізвище" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Новий пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Повторити новий пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+
+            <TextBox IsEnabled="False" Name="changeNameField" Grid.Row="1" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox IsEnabled="False" Name="changeSurnameField" Grid.Row="2" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox IsEnabled="False" Name="changePasswordField" Grid.Row="3" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox IsEnabled="False" Name="changePassword2Field" Grid.Row="4" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+
+            <Button Name="UpdateDataButton" IsEnabled="False" Grid.Row="5" Grid.ColumnSpan="2" FontSize="28" Margin="150,10,150,20" Content="Оновити дані" Cursor="Hand" FontFamily="Comic Sans MS" Click="Button_UpdateData_Click"/>
+        </Grid>
+        <Grid Grid.RowSpan="2" Grid.Column="1" Margin="0,0,0,250">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.3*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.ColumnSpan="2" Content="Реєстрація нового користувача" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" FontFamily="Comic Sans MS" FontWeight="Bold"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Ім'я" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Прізвище" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Логін" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Повторити пароль" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontFamily="Comic Sans MS"/>
+
+            <TextBox Name="regNameField" Grid.Row="1" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox Name="regSurnameField" Grid.Row="2" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox Name="regLoginField" Grid.Row="3" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox Name="regPassField" Grid.Row="4" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+            <TextBox Name="regRepeatPassField" Grid.Row="5" Grid.Column="1" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10"/>
+
+            <Button Name="RegestrateButton" Grid.Row="6" Grid.ColumnSpan="2" FontSize="28" Margin="150,10,150,10" Content="Зареєструватись" Cursor="Hand" FontFamily="Comic Sans MS" Click="RegestrateButton_Click"/>
+        </Grid>
+        <Button Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Вийти" FontSize="28" Cursor="Hand" FontFamily="Comic Sans MS" Width="200" Height="60" Margin="0,0,40,20" Click="Button_Exit_Click"/>
+    </Grid>
+</Window>

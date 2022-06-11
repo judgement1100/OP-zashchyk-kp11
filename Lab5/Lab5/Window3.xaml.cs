@@ -271,5 +271,10 @@ namespace Lab5
                 MessageBox.Show(err.Message);
             }
         }
+
+        private void DataGrid_Win1_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
+        {
+            MessageBox.Show("Hello!");
+        }
     }
 }

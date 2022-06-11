@@ -1,0 +1,26 @@
+﻿<Window x:Class="Pract3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pract3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Grid.ColumnSpan="3" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Розмежування повноважень користувачів на основі парольної ідентифікації" FontFamily="Comic Sans MS"/>
+        <Button FontSize="16" x:Name="AdminButton" Grid.Row="1" Grid.Column="0" Margin="30" Content="Режим адміністратора" Cursor="Hand" FontFamily="Comic Sans MS" Click="AdminButton_Click"/>
+        <Button FontSize="16" x:Name="UserButton" Grid.Row="1" Grid.Column="1" Margin="30" Content="Режим користувача" Cursor="Hand" FontFamily="Comic Sans MS" Click="UserButton_Click"/>
+        <Button FontSize="16" x:Name="DeveloperInfoButton" Grid.Row="1" Grid.Column="2" Margin="30" Content="Про розробника" Cursor="Hand" FontFamily="Comic Sans MS" Click="DeveloperInfoButton_Click"/>
+        <Button FontSize="16" x:Name="ExitButton" Grid.Row="2" Grid.Column="1" Margin="20" Content="Закрити додаток" Cursor="Hand" Click="ExitButton_Click" FontFamily="Comic Sans MS"/>
+    </Grid>
+</Window>
